@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>StockAR · Sistema de gestión para pymes argentinas | M-Code Systems</title>
+  <meta name="description" content="StockAR ordena tu stock, ventas, caja y taller. Hecho en Argentina, para comercios como el tuyo. Funciona sin internet. Precio accesible. Probá 3 meses sin costo.">
+  <meta property="og:title" content="StockAR · El sistema de gestión que tu comercio necesitaba">
+  <meta property="og:description" content="Stock, ventas, caja y servicio técnico en un solo lugar. Hecho en Argentina, para comercios como el tuyo.">
+  <meta property="og:image" content="https://stockar.mcodesystems.com.ar/og-image.jpg">
+  <meta property="og:url" content="https://stockar.mcodesystems.com.ar">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========== CURSOR CUSTOM (opcional) ========== -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ========== NAVBAR STICKY ========== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="#" class="logo" aria-label="M-Code Systems - Inicio">
+          <span class="logo-badge">M·Code</span>
+          <span class="logo-sub">Systems</span>
+        </a>
+        <span class="product-tag">StockAR</span>
+      </div>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+        <a href="#funciones">Funciones</a>
+        <a href="#precios">Precios</a>
+        <a href="#servicio-tecnico">Servicio Técnico</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="nav-right">
+        <a href="#contacto" class="btn btn-primary btn-small">Quiero una demo</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Panel mobile -->
+    <div class="mobile-panel" id="mobilePanel" aria-hidden="true">
+      <div class="mobile-panel-inner">
+        <a href="#funciones">Funciones</a>
+        <a href="#precios">Precios</a>
+        <a href="#servicio-tecnico">Servicio Técnico</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#contacto" class="btn btn-primary mobile-cta">Quiero una demo</a>
+      </div>
+    </div>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-glow" aria-hidden="true"></div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            El sistema de gestión que tu comercio necesitaba.<br>
+            <span class="hero-highlight">Y que podés pagar.</span>
+          </h1>
+          <p class="hero-subtitle">
+            StockAR ordena tu stock, tus ventas, tu caja y hasta tu taller.
+            Hecho en Argentina, para comercios como el tuyo.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contacto" class="btn btn-primary btn-large">Quiero una demo</a>
+            <a href="#funciones" class="btn btn-outline btn-large">Ver funciones</a>
+          </div>
+          <ul class="hero-badges">
+            <li><span class="badge-check">✓</span> Funciona sin internet</li>
+            <li><span class="badge-check">✓</span> Soporte en español, de verdad</li>
+            <li><span class="badge-check">✓</span> Instalación en 48h</li>
+          </ul>
+        </div>
+
+        <div class="hero-mockup" id="heroMockup">
+          <div class="mockup-glow" aria-hidden="true"></div>
+          <div class="mockup-frame">
+            <!-- SVG estilizado del dashboard -->
+            <svg viewBox="0 0 520 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Panel de StockAR">
+              <rect width="520" height="360" rx="12" fill="#0f172a"/>
+              <rect x="1" y="1" width="518" height="358" rx="11" stroke="rgba(148,163,184,.15)" stroke-width="1.5"/>
+              <!-- sidebar -->
+              <rect x="0" y="0" width="100" height="360" rx="12" fill="#0b1120"/>
+              <rect x="1" y="1" width="98" height="358" rx="11" stroke="rgba(148,163,184,.1)" stroke-width="1"/>
+              <circle cx="24" cy="28" r="8" fill="#2563eb" opacity="0.9"/>
+              <rect x="42" y="22" width="40" height="4" rx="2" fill="#334155"/>
+              <rect x="42" y="30" width="28" height="3" rx="1.5" fill="#1e293b"/>
+              <rect x="16" y="60" width="68" height="6" rx="3" fill="#2563eb" opacity="0.7"/>
+              <rect x="16" y="82" width="68" height="6" rx="3" fill="#1e293b"/>
+              <rect x="16" y="104" width="68" height="6" rx="3" fill="#1e293b"/>
+              <rect x="16" y="126" width="68" height="6" rx="3" fill="#1e293b"/>
+              <rect x="16" y="148" width="68" height="6" rx="3" fill="#1e293b"/>
+              <rect x="16" y="170" width="68" height="6" rx="3" fill="#1e293b"/>
+              <!-- header -->
+              <rect x="116" y="20" width="140" height="10" rx="4" fill="#334155"/>
+              <rect x="400" y="18" width="100" height="14" rx="6" fill="#2563eb" opacity="0.8"/>
+              <!-- cards -->
+              <rect x="116" y="50" width="120" height="70" rx="8" fill="#0f172a" stroke="rgba(148,163,184,.1)"/>
+              <rect x="130" y="64" width="40" height="6" rx="3" fill="#10b981"/>
+              <rect x="130" y="78" width="70" height="10" rx="3" fill="#e2e8f0" opacity="0.8"/>
+              <rect x="130" y="96" width="50" height="4" rx="2" fill="#475569"/>
+
+              <rect x="248" y="50" width="120" height="70" rx="8" fill="#0f172a" stroke="rgba(148,163,184,.1)"/>
+              <rect x="262" y="64" width="40" height="6" rx="3" fill="#8b5cf6"/>
+              <rect x="262" y="78" width="70" height="10" rx="3" fill="#e2e8f0" opacity="0.8"/>
+              <rect x="262" y="96" width="50" height="4" rx="2" fill="#475569"/>
+
+              <rect x="380" y="50" width="120" height="70" rx="8" fill="#0f172a" stroke="rgba(148,163,184,.1)"/>
+              <rect x="394" y="64" width="40" height="6" rx="3" fill="#2563eb"/>
+              <rect x="394" y="78" width="70" height="10" rx="3" fill="#e2e8f0" opacity="0.8"/>
+              <rect x="394" y="96" width="50" height="4" rx="2" fill="#475569"/>
+              <!-- tabla -->
+              <rect x="116" y="140" width="384" height="200" rx="8" fill="#0f172a" stroke="rgba(148,163,184,.1)"/>
+              <rect x="130" y="156" width="80" height="8" rx="4" fill="#334155"/>
+              <rect x="130" y="180" width="356" height="1" fill="rgba(148,163,184,.1)"/>
+              <rect x="130" y="192" width="60" height="6" rx="3" fill="#475569"/>
+              <rect x="210" y="192" width="80" height="6" rx="3" fill="#475569"/>
+              <rect x="310" y="192" width="60" height="6" rx="3" fill="#475569"/>
+              <rect x="390" y="192" width="60" height="6" rx="3" fill="#10b981" opacity="0.7"/>
+              <rect x="130" y="214" width="60" height="6" rx="3" fill="#1e293b"/>
+              <rect x="210" y="214" width="80" height="6" rx="3" fill="#1e293b"/>
+              <rect x="310" y="214" width="60" height="6" rx="3" fill="#1e293b"/>
+              <rect x="390" y="214" width="60" height="6" rx="3" fill="#10b981" opacity="0.5"/>
+              <rect x="130" y="236" width="60" height="6" rx="3" fill="#1e293b"/>
+              <rect x="210" y="236" width="80" height="6" rx="3" fill="#1e293b"/>
+              <rect x="310" y="236" width="60" height="6" rx="3" fill="#1e293b"/>
+              <rect x="390" y="236" width="60" height="6" rx="3" fill="#10b981" opacity="0.5"/>
+              <rect x="130" y="258" width="60" height="6" rx="3" fill="#1e293b"/>
+              <rect x="210" y="258" width="80" height="6" rx="3" fill="#1e293b"/>
+              <rect x="310" y="258" width="60" height="6" rx="3" fill="#1e293b"/>
+              <rect x="390" y="258" width="60" height="6" rx="3" fill="#f59e0b" opacity="0.6"/>
+              <rect x="130" y="280" width="60" height="6" rx="3" fill="#1e293b"/>
+              <rect x="210" y="280" width="80" height="6" rx="3" fill="#1e293b"/>
+              <rect x="310" y="280" width="60" height="6" rx="3" fill="#1e293b"/>
+              <rect x="390" y="280" width="60" height="6" rx="3" fill="#10b981" opacity="0.5"/>
+              <!-- borde decorativo -->
+              <rect x="116" y="140" width="384" height="200" rx="8" stroke="rgba(37,99,235,.15)" stroke-width="1.5"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LOGOS CLIENTES (marquee) ========== -->
+    <section class="clientes" id="clientes">
+      <p class="clientes-label">Comercios que ya ordenaron su negocio con StockAR</p>
+      <div class="marquee">
+        <div class="marquee-track" id="marqueeTrack">
+          <span class="cliente-logo">Almacén Don Pedro</span>
+          <span class="cliente-logo">Ferretería Central</span>
+          <span class="cliente-logo">Kiosco 24hs</span>
+          <span class="cliente-logo">Taller Móvil</span>
+          <span class="cliente-logo">Minimercado Sur</span>
+          <span class="cliente-logo">Celulares Express</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROBLEMA / SOLUCIÓN ========== -->
+    <section class="problema-solucion" id="problema">
+      <div class="section-container">
+        <div class="ps-grid">
+          <div class="ps-col ps-antes reveal">
+            <h2 class="ps-title ps-title-antes">Antes de StockAR</h2>
+            <ul class="ps-list">
+              <li><span class="ps-icon ps-icon-red">✕</span> No sabés cuánto stock real tenés</li>
+              <li><span class="ps-icon ps-icon-red">✕</span> El sistema viejo es caro y complicado</li>
+              <li><span class="ps-icon ps-icon-red">✕</span> Se te cae el sistema cuando se cae internet</li>
+              <li><span class="ps-icon ps-icon-red">✕</span> Nadie atiende el teléfono cuando tenés un problema</li>
+            </ul>
+          </div>
+          <div class="ps-col ps-despues reveal">
+            <h2 class="ps-title ps-title-despues">Con StockAR</h2>
+            <ul class="ps-list">
+              <li><span class="ps-icon ps-icon-green">✓</span> Stock real, actualizado en tiempo real</li>
+              <li><span class="ps-icon ps-icon-green">✓</span> Precio accesible para tu tamaño</li>
+              <li><span class="ps-icon ps-icon-green">✓</span> Funciona en red local, sin depender de internet</li>
+              <li><span class="ps-icon ps-icon-green">✓</span> Soporte por WhatsApp, atención de verdad</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FUNCIONES ========== -->
+    <section class="funciones" id="funciones">
+      <div class="section-container">
+        <h2 class="section-title reveal">Todo lo que tu comercio necesita, en un solo sistema</h2>
+        <p class="section-subtitle reveal">Sin módulos extra. Sin sorpresas. Sin pagar por funciones que no usás.</p>
+
+        <div class="funciones-grid">
+          <!-- 1 POS -->
+          <div class="funcion-card reveal">
+            <div class="funcion-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20"/><path d="M7 15h2"/><path d="M12 15h2"/></svg>
+            </div>
+            <h3>Punto de venta</h3>
+            <p>Cobrá rápido con lector de código de barras, múltiples medios de pago, ticket imprimible.</p>
+          </div>
+
+          <!-- 2 Stock -->
+          <div class="funcion-card reveal">
+            <div class="funcion-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <h3>Control de stock</h3>
+            <p>Alertas de reposición, movimientos, ajustes, historial completo.</p>
+          </div>
+
+          <!-- 3 Caja -->
+          <div class="funcion-card reveal">
+            <div class="funcion-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M2 10h4"/><path d="M18 10h4"/></svg>
+            </div>
+            <h3>Caja diaria</h3>
+            <p>Apertura, cierre, arqueo, movimientos en efectivo, reporte del turno.</p>
+          </div>
+
+          <!-- 4 Servicio Técnico (destacado violeta) -->
+          <div class="funcion-card funcion-card-destacada reveal">
+            <div class="funcion-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>Servicio Técnico</h3>
+            <p>Órdenes de reparación, seguimiento público con link, aviso por WhatsApp al cliente.</p>
+            <span class="badge-destacado">Integrado</span>
+          </div>
+
+          <!-- 5 Reportes -->
+          <div class="funcion-card reveal">
+            <div class="funcion-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-4 3 3 5-5"/></svg>
+            </div>
+            <h3>Reportes y estadísticas</h3>
+            <p>Ventas, márgenes, top productos, evolución mensual, export a Excel.</p>
+          </div>
+
+          <!-- 6 Multi-usuario -->
+          <div class="funcion-card reveal">
+            <div class="funcion-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Multi-usuario y permisos</h3>
+            <p>Cada empleado ve solo lo que le corresponde. Auditoría de cada acción.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICIO TÉCNICO (destacado) ========== -->
+    <section class="servicio-tecnico" id="servicio-tecnico">
+      <div class="st-bg-glow" aria-hidden="true"></div>
+      <div class="section-container">
+        <div class="st-grid">
+          <div class="st-content reveal">
+            <h2 class="section-title">El único sistema argentino con módulo de taller integrado.</h2>
+            <ul class="st-list">
+              <li><span class="st-dot"></span> Órdenes con código único <strong>R-XXXXXXXX-XXXX</strong></li>
+              <li><span class="st-dot"></span> Link público para que tu cliente vea el estado</li>
+              <li><span class="st-dot"></span> Aviso automático por WhatsApp cuando cambia de estado</li>
+            </ul>
+            <a href="#contacto" class="btn btn-violeta btn-large">Quiero ver el módulo de taller</a>
+          </div>
+          <div class="st-mockup reveal">
+            <div class="ticket">
+              <div class="ticket-header">
+                <span class="ticket-codigo">R-2026-0042</span>
+                <span class="ticket-badge">En reparación</span>
+              </div>
+              <div class="ticket-body">
+                <p><strong>Cliente:</strong> María López</p>
+                <p><strong>Equipo:</strong> Samsung Galaxy A54</p>
+                <p><strong>Falla:</strong> Pantalla rota</p>
+                <p><strong>Ingreso:</strong> 12/03/2026</p>
+              </div>
+              <div class="ticket-footer">
+                <div class="barcode">
+                  <svg viewBox="0 0 120 30" aria-hidden="true">
+                    <rect x="0" y="0" width="3" height="30" fill="#e2e8f0"/>
+                    <rect x="5" y="0" width="2" height="30" fill="#e2e8f0"/>
+                    <rect x="9" y="0" width="4" height="30" fill="#e2e8f0"/>
+                    <rect x="15" y="0" width="2" height="30" fill="#e2e8f0"/>
+                    <rect x="19" y="0" width="3" height="30" fill="#e2e8f0"/>
+                    <rect x="24" y="0" width="2" height="30" fill="#e2e8f0"/>
+                    <rect x="28" y="0" width="5" height="30" fill="#e2e8f0"/>
+                    <rect x="35" y="0" width="2" height="30" fill="#e2e8f0"/>
+                    <rect x="39" y="0" width="3" height="30" fill="#e2e8f0"/>
+                    <rect x="44" y="0" width="2" height="30" fill="#e2e8f0"/>
+                    <rect x="48" y="0" width="4" height="30" fill="#e2e8f0"/>
+                    <rect x="54" y="0" width="2" height="30" fill="#e2e8f0"/>
+                    <rect x="58" y="0" width="3" height="30" fill="#e2e8f0"/>
+                    <rect x="63" y="0" width="2" height="30" fill="#e2e8f0"/>
+                    <rect x="67" y="0" width="4" height="30" fill="#e2e8f0"/>
+                    <rect x="73" y="0" width="2" height="30" fill="#e2e8f0"/>
+                    <rect x="77" y="0" width="3" height="30" fill="#e2e8f0"/>
+                    <rect x="82" y="0" width="2" height="30" fill="#e2e8f0"/>
+                    <rect x="86" y="0" width="5" height="30" fill="#e2e8f0"/>
+                    <rect x="93" y="0" width="2" height="30" fill="#e2e8f0"/>
+                    <rect x="97" y="0" width="3" height="30" fill="#e2e8f0"/>
+                    <rect x="102" y="0" width="2" height="30" fill="#e2e8f0"/>
+                    <rect x="106" y="0" width="4" height="30" fill="#e2e8f0"/>
+                    <rect x="112" y="0" width="2" height="30" fill="#e2e8f0"/>
+                  </svg>
+                </div>
+                <span class="ticket-copy">Copia cliente</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CÓMO FUNCIONA ========== -->
+    <section class="como-funciona" id="como-funciona">
+      <div class="section-container">
+        <h2 class="section-title reveal">Cómo empezás a usar StockAR</h2>
+        <p class="section-subtitle reveal">En 4 pasos simples, sin vueltas.</p>
+
+        <div class="timeline">
+          <div class="timeline-step reveal">
+            <div class="step-number">1</div>
+            <h3>Nos contactás</h3>
+            <p>Por WhatsApp o email. Te respondemos en el día.</p>
+          </div>
+          <div class="timeline-step reveal">
+            <div class="step-number">2</div>
+            <h3>Demo de 15 min</h3>
+            <p>Te mostramos el sistema funcionando, sin compromiso.</p>
+          </div>
+          <div class="timeline-step reveal">
+            <div class="step-number">3</div>
+            <h3>Instalamos y migramos</h3>
+            <p>Pasamos tus datos actuales y dejamos todo listo.</p>
+          </div>
+          <div class="timeline-step reveal">
+            <div class="step-number">4</div>
+            <h3>Capacitamos a tu equipo</h3>
+            <p>Tu gente aprende a usarlo en una sesión práctica.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIOS ========== -->
+    <section class="testimonios" id="testimonios">
+      <div class="section-container">
+        <h2 class="section-title reveal">Lo que dicen los que ya lo usan</h2>
+        <div class="testimonios-grid">
+          <div class="testimonio-card reveal">
+            <p class="testimonio-texto">"Antes tenía que contar el stock a mano todos los domingos. Ahora lo veo desde el celular."</p>
+            <div class="testimonio-autor">
+              <img src="https://ui-avatars.com/api/?name=Pedro+G&background=2563eb&color=fff&size=64" alt="Avatar de Pedro G." width="48" height="48">
+              <div>
+                <strong>Pedro G.</strong>
+                <span>Almacén en Catamarca</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonio-card reveal">
+            <p class="testimonio-texto">"Lo que más me sirve es el módulo de servicio técnico. Mis clientes ven el estado por link y no me llaman a cada rato."</p>
+            <div class="testimonio-autor">
+              <img src="https://ui-avatars.com/api/?name=Laura+M&background=8b5cf6&color=fff&size=64" alt="Avatar de Laura M." width="48" height="48">
+              <div>
+                <strong>Laura M.</strong>
+                <span>Taller de celulares en Rosario</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonio-card reveal">
+            <p class="testimonio-texto">"Se cayó internet un martes y seguimos vendiendo como si nada. Eso no lo tiene ningún otro sistema."</p>
+            <div class="testimonio-autor">
+              <img src="https://ui-avatars.com/api/?name=Carlos+R&background=10b981&color=fff&size=64" alt="Avatar de Carlos R." width="48" height="48">
+              <div>
+                <strong>Carlos R.</strong>
+                <span>Ferretería en Córdoba</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRECIOS ========== -->
+    <section class="precios" id="precios">
+      <div class="section-container">
+        <h2 class="section-title reveal">Planes claros, sin letra chica</h2>
+        <p class="section-subtitle reveal">Elegí el plan según el tamaño de tu negocio. Podés cambiarlo cuando quieras.</p>
+
+        <div class="precios-grid">
+          <!-- Emprendedor -->
+          <div class="precio-card reveal">
+            <h3 class="precio-nombre">Emprendedor</h3>
+            <p class="precio-monto">$17.900<span>/mes</span></p>
+            <ul class="precio-features">
+              <li>1 sucursal</li>
+              <li>3 usuarios</li>
+              <li>POS + stock + caja</li>
+              <li>Reportes básicos</li>
+              <li>Soporte por WhatsApp</li>
+            </ul>
+            <a href="#contacto" class="btn btn-outline btn-full">Empezar</a>
+          </div>
+
+          <!-- Negocio (destacado) -->
+          <div class="precio-card precio-destacado reveal">
+            <span class="precio-badge">Más elegido</span>
+            <h3 class="precio-nombre">Negocio</h3>
+            <p class="precio-monto">$34.900<span>/mes</span></p>
+            <ul class="precio-features">
+              <li>2 sucursales</li>
+              <li>10 usuarios</li>
+              <li>Todo lo de Emprendedor</li>
+              <li>+ Servicio Técnico</li>
+              <li>+ Reportes avanzados</li>
+            </ul>
+            <a href="#contacto" class="btn btn-primary btn-full">Quiero este plan</a>
+          </div>
+
+          <!-- Empresa -->
+          <div class="precio-card reveal">
+            <h3 class="precio-nombre">Empresa</h3>
+            <p class="precio-monto">$69.900<span>/mes</span></p>
+            <ul class="precio-features">
+              <li>Sucursales ilimitadas</li>
+              <li>Usuarios ilimitados</li>
+              <li>Personalizaciones</li>
+              <li>Soporte prioritario</li>
+              <li>Capacitación extra</li>
+            </ul>
+            <a href="#contacto" class="btn btn-outline btn-full">Hablar con ventas</a>
+          </div>
+        </div>
+
+        <p class="precio-onboarding reveal">Onboarding único: $180.000 (instalación + migración + capacitación)</p>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="faq" id="faq">
+      <div class="section-container">
+        <h2 class="section-title reveal">Preguntas frecuentes</h2>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-pregunta" aria-expanded="false">
+              <span>¿Cuánto tarda la instalación?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-respuesta">
+              <p>Entre 24 y 48 horas hábiles desde que confirmás. Incluye migración de datos y capacitación inicial.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-pregunta" aria-expanded="false">
+              <span>¿Funciona sin internet?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-respuesta">
+              <p>Sí. StockAR corre en red local. Si se corta internet, seguís vendiendo y operando con normalidad. Cuando vuelve, todo se sincroniza.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-pregunta" aria-expanded="false">
+              <span>¿Qué pasa con mis datos?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-respuesta">
+              <p>Los datos quedan en tu servidor. No son nuestros, son tuyos. Vos decidís qué hacer con ellos en cualquier momento.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-pregunta" aria-expanded="false">
+              <span>¿Puedo cambiar de plan?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-respuesta">
+              <p>Sí, podés subir o bajar de plan cuando quieras. Se ajusta de forma proporcional en la próxima facturación.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-pregunta" aria-expanded="false">
+              <span>¿Cobran por soporte?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-respuesta">
+              <p>No. El soporte por WhatsApp está incluido en todos los planes. Sin llamadas 0800, sin esperas eternas.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-pregunta" aria-expanded="false">
+              <span>¿Puedo probarlo antes de pagar?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-respuesta">
+              <p>Sí. Te damos 3 meses de prueba sin costo. Si no te sirve, no pagás nada.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA FINAL ========== -->
+    <section class="cta-final" id="contacto">
+      <div class="cta-bg-gradient" aria-hidden="true"></div>
+      <div class="section-container cta-container">
+        <h2 class="cta-title reveal">Probá StockAR 3 meses sin costo.</h2>
+        <p class="cta-subtitle reveal">Si no te sirve, no pagás nada. Sin letra chica.</p>
+        <a href="https://wa.me/5493834567890" class="btn btn-cta btn-large reveal" target="_blank" rel="noopener">Agendar demo por WhatsApp</a>
+        <p class="cta-email reveal">O escribinos a <a href="mailto:hola@mcodesystems.com.ar">hola@mcodesystems.com.ar</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="section-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <span class="logo-badge">M·Code</span>
+            <span class="logo-sub">Systems</span>
+          </div>
+          <p class="footer-tagline">Software de gestión para pymes argentinas. Hecho en Catamarca, para todo el país.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Producto</h4>
+          <p>StockAR</p>
+          <p class="footer-desc">Stock, ventas, caja y servicio técnico en un solo sistema.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Links</h4>
+          <ul class="footer-links">
+            <li><a href="#funciones">Funciones</a></li>
+            <li><a href="#precios">Precios</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/5493834567890" target="_blank" rel="noopener">WhatsApp: +54 9 383 456-7890</a></li>
+            <li><a href="mailto:hola@mcodesystems.com.ar">hola@mcodesystems.com.ar</a></li>
+            <li>Catamarca, Argentina</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 M-Code Systems · StockAR</p>
+        <div class="footer-legal">
+          <a href="#">Términos y condiciones</a>
+          <a href="#">Política de privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
